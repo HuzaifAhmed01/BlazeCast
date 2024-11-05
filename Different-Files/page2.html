@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="page2.css">
+</head>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<body>
+<div id="main">  
+  <video autoplay  loop muted src="/Images,videos/weather.webm"></video>
+  
+  <div class="card">
+    <nav>
+      <h1>BlazeCast<i class="ri-windy-fill"></i></h1><h2><a href="/index.html"><i class="ri-arrow-left-circle-line"></i></a></h2>
+    </nav>
+    <div class="searchme">
+      <div class="search">
+      <input type="text" placeholder="enter city name " spellcheck="false">
+      <button><i class="ri-search-line"></i></button>
+    </div>
+  </div>
+    
+    <div class="error">
+      <p>Oops!! City Name Is Not Correct.</p>
+    </div>
+
+    <div class="weather">
+      <img src="/Images,videos/rain.webp" class="weather-icon">
+      <h1 class="temp">22<i class="ri-celsius-line"></i></h1>
+      <h2 class="city">New York</h2>
+      <div class="details">
+        <div class="col">
+          <img  src="/Images,videos/humidity.webp" alt="">
+          <div>
+            <p class="humidity">50%</p>
+            
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="/Images,videos/wind.webp" alt="">
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<script src="./script2.js"></script>
+</body>
+
+</html>

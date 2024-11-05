@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    
+
+}
+nav h1{
+    color: white;
+    display: flex;
+    
+}
+nav h2{
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+    transition: 0.6s;
+    font-size: 2vw;
+   
+
+}
+nav h2 a{
+    text-decoration: none;
+    color: white;
+}
+nav h2:hover{
+    transform: scale(6);
+    transform: rotate(360deg);
+
+}
+nav h2:hover{
+    color: rgb(201, 201, 201)
+}
+nav h1 i{
+    margin-top:4px;
+    
+}
+
+.card{
+    width: 100%;
+   height: 100%;
+    
+    
+    background: rgba(0, 0, 0, 0.486);
+    color: #fff;
+    margin: 0px auto 0;
+    /* border-radius: 20px; */
+    padding: 40px 35px;
+    text-align: center;
+    position: absolute;
+ 
+}
+.searchme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    width: 40%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vw;
+    gap:2vw;
+    /* margin-left: 15vw; */
+}
+.search input{
+    border: 0;
+    outline: 0;
+    
+    background: #ffffffb2;
+    color:#555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius:2vw;
+    flex: 1;
+    /* margin-right: 16px; */
+    font-size: 18px;
+    text-align: center;
+    transition: ease 0.5s;
+
+}
+.search input:hover{
+    /* font-size: 20px; */
+    background-color:white;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    /* background: #ffffffb2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4vw;
+    
+    cursor: pointer;
+    transition: 0.4s;
+    
+    
+    
+}
+.search button i{
+    font-size: 2vw;
+    background-color:#b4b4b4b2 ; 
+    padding: 1vw; 
+     border-radius: 50%; 
+    transition: 0.7s;
+}
+.search button i:hover {
+   background-color: rgb(255, 255, 255);
+}
+.search button i:hover{
+    transform: rotate(360deg);
+}
+
+.weather-icon{
+    width: 130px;
+    margin-top: 3vw;
+}
+
+.weather h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 37px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px ;
+    margin-top: 30px;
+}
+.col{
+   display: flex;
+align-items: center;
+  text-align:left;
+margin-top: -3vw;
+
+}
+.temp i{
+    font-size: 5vw;
+}
+.col img{
+    width: 60px;
+    margin-right: 10px;
+
+}
+.humidity, .wind{
+    font-size: 22px;
+    margin-top: -6px;
+
+}
+.weather{
+    /* display: none; */
+    transition: 0.25s;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media (max-width:750px){
+
+    /* .search input{
+        font-size: 4vw;
+    } */
+.search input{
+    height: 40px;
+}
+.card nav{
+
+padding: 12vw 3vw;
+}
+nav h1{
+    font-size: 7vw;
+}
+.ri-arrow-left-circle-line{
+    font-size: 7vw;
+}
+nav h2{
+    font-size:6vw ;
+}
+.search {
+width: 20%;
+place-content: center;
+gap:2vw;
+}
+.search button i{
+    /* border-radius: 50%; */
+    /* width: 50px;
+    height: 50px; */
+    font-size: 5.3vw;
+    padding: 2.7vw;
+    cursor: pointer;
+    
+}
+
+.card{
+  
+    font-size: 3vw;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .searchme{
+margin-top: 9vw;
+    }
+.details{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 13vw;
+    gap: 10vw;
+
+}
+.col img{
+    width: 9vw;
+}
+.col{
+    font-size:3.6vw ;
+    text-align: center;
+}
+}
